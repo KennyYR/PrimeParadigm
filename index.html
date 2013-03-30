@@ -41,6 +41,25 @@ body
 img {border: none;}
 a {border: none; color: #000; text-decoration: none;}
 a:hover{text-decoration: none;}
+font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #aaa; font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:.1em; line-height:13px;
+}
+.oneColFixCtr #container {
+	width: 1000px;  /* using 20px less than a full 808px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px;
+	text-align: justify; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+a { color:#9c9c9c; text-decoration:none;}
+a:hover { color:#000000;}
 </style>
 </head>
 
